@@ -1,0 +1,789 @@
+@media (max-width: 575.98px) {
+
+    /* home page small device style start */
+    /* small device common style start */
+    .d-sm-block {
+        display: block;
+    }
+
+    .d-sm-none {
+        display: none;
+    }
+
+    .d-sm-ib {
+        display: inline-block;
+    }
+
+    .text-sm-center {
+        text-align: center;
+    }
+
+    .px-sm-15 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .mb-sm-10 {
+        margin-bottom: 15px;
+    }
+
+    .w-sm-100 {
+        width: 100%;
+    }
+
+    /* small device common style end */
+
+    /* header small device media style start */
+    .menu-toggler {
+        position: absolute;
+        top: 11px;
+        right: 15px;
+        border: .1px solid #ffffff28;
+        border-radius: 5px;
+        padding: 4px 12px;
+    }
+
+    .menu-toggler a i {
+        font-size: 20px;
+        color: #ffffff80 !important;
+    }
+
+    .header {
+        padding: 1rem 0;
+    }
+
+    .header-container,
+    .header-nav,
+    .header-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-nav {
+        display: none;
+        padding-top: 10px;
+    }
+
+    .logo-container a,
+    .header-nav ul li a {
+        display: inline-block;
+    }
+
+    .logo-container a {
+        padding: 0;
+    }
+
+    .menu-toggler-checkbox:checked~.header-container .header-nav {
+        display: block;
+    }
+
+    .menu-toggler-checkbox {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    .customer-dropdown-ul {
+        align-items: start !important;
+    }
+
+    .customer-menu ul li {
+        padding: 5px 0 5px 5px;
+    }
+
+    .customer-dropdown:focus-within .customer-menu {
+        position: relative !important;
+        display: inline-block !important;
+        width: calc(100% - 1rem - 17px);
+        top: 0;
+    }
+
+    .white-btn {
+        margin-left: 17px;
+    }
+
+    /* header small device media style end */
+
+    /* banner small device media style start */
+    .banner {
+        margin: 0;
+        padding: 78px 15px 25px;
+    }
+
+    .section-title h1,
+    .feature-title h2,
+    .service-title h2,
+    .application h1,
+    .restaurent-feature-content h2,
+    .additional-feature-title h1,
+    .pricing-details p {
+        font-size: 1.4rem;
+        line-height: 32px;
+    }
+
+    .section-title p {
+        font-size: 1.1rem;
+        padding: 1.5rem 15px;
+        line-height: 25px;
+    }
+
+    .form-row {
+        justify-content: center;
+    }
+
+    .form-row select {
+        padding: 0.8rem 0.5rem;
+        width: 100%;
+    }
+
+    .form-row button {
+        margin: 15px 0 0;
+    }
+
+    .slider {
+        justify-content: space-evenly;
+    }
+
+    .slider img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* banner small device media style end */
+
+    /* easy small device style start */
+    .easy,
+    .service,
+    .pricing {
+        padding: 15px 0;
+    }
+
+    .easy-title p,
+    .easy-container-p,
+    .feature-title-container p,
+    .business-title p,
+    .business-effort-title p,
+    .service-title p,
+    .hardware-title p,
+    .support-title p,
+    .business-automation-title p,
+    .restaurent-feature-content p,
+    .single-additional-feature p,
+    .business-support-title p,
+    .pricing-title p,
+    .try-free-left-container p,
+    .help-title p,
+    .card-details p:first-of-type {
+        font-size: 16px;
+    }
+
+    .easy-image img {
+        width: 100%;
+    }
+
+    .easy-container-p {
+        line-height: 25px;
+        padding: 0 5px;
+    }
+
+    .easy-title p {
+        font-size: 15px;
+        padding: 1.5rem .7rem;
+    }
+
+    /* easy small device style end */
+
+    /* service small device style start */
+    .service-container,
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .service-title-container {
+        text-align: center;
+    }
+
+    .service-title-container p {
+        padding-bottom: 40px;
+    }
+
+    .cards {
+        gap: 25px;
+    }
+
+    .card-details h,
+    .try-free-left-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-details p:last-of-type {
+        font-size: 1.125rem;
+    }
+
+    /* service small device style end */
+
+    /* hardware small device style start */
+    .hardware-container ul li {
+        width: 100%;
+    }
+
+    /* hardware small device style end */
+    /* customer small device style start */
+    .customer-box figure {
+        width: 40px;
+    }
+
+    .customer {
+        margin-top: 40px;
+    }
+
+    /* customer small device style end */
+    /* support small device style start */
+    .support-box {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .support-box a p {
+        font-weight: 400;
+    }
+
+    /* support small device style end */
+
+
+    /* feature small device style start */
+    .single-feature,
+    .restaurent-feature,
+    .business-support-box,
+    .pricing-box,
+    .retail-feature-box,
+    .quickly-retail-use-container,
+    .help-box,
+    .pricing-limit-options {
+        flex-direction: column;
+    }
+
+    .feature-title-container {
+        padding: 25px;
+    }
+
+    .feature-title-container p,
+    .service-title p,
+    .business-support-title p {
+        line-height: 30px;
+    }
+
+    .single-feature {
+        margin: 35px 0;
+    }
+
+    .single-feature figure {
+        display: contents;
+    }
+
+    .business,
+    .hardware,
+    .customer,
+    .support,
+    .footer,
+    .business-automation,
+    .application,
+    .business-support,
+    .try-free,
+    .retail-additional-feature,
+    .retail-uses,
+    .help {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .restaurent-feature-content p {
+        padding: 0 10px;
+    }
+
+    /* feature small device style end */
+
+    /* footer small device media style start */
+    .footer-ul-span {
+        display: flex;
+        flex-wrap: wrap;
+        flex: auto;
+    }
+
+    .footer {
+        padding: 48px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-container ul:nth-child(1),
+    .footer-container ul:nth-child(2) {
+        flex: 1 0 calc(40% - 10px);
+        margin-right: 10px;
+    }
+
+    .footer-container ul:nth-child(3),
+    .footer-container ul:nth-child(4) {
+        flex: 1 0 calc(33.33% - 10px);
+    }
+
+    .footer-social-links ul {
+        margin: 10px 0 0 !important;
+        text-align: center;
+    }
+
+    .address ul li {
+        margin: 0;
+        width: 50%;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 30px;
+        line-height: 20px;
+    }
+
+    /* footer small device media style end */
+    /* home page small device style end */
+
+    /* Restaurent page small device style start */
+
+    /* restaurent banner small device style start */
+    .restaurent-banner-inner {
+        text-align: center;
+    }
+
+    .restaurent-banner-inner,
+    .retail-banner-inner {
+        background: none;
+        padding: 75px 15px 55px;
+        margin-top: 0;
+    }
+
+    .restaurent-banner-inner img,
+    .retail-banner-inner img {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .restaurent-banner-inner h2,
+    .retail-banner-inner h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .restaurent-banner-inner button,
+    .retail-banner-inner button {
+        margin-top: 15px;
+    }
+
+    .order-sm-one {
+        order: 1;
+    }
+
+    .order-sm-two {
+        order: 2;
+    }
+
+    .res-single-feat,
+    .ret-single-feat {
+        margin: 0;
+    }
+
+    /* restaurent banner small device style end */
+    /* business automation small device style  start */
+    .business-automation-title p {
+        line-height: 30px;
+    }
+
+    /* business automation small device style  end */
+    /* inventory small device style  start */
+    .inv-p {
+        padding-bottom: 30px;
+    }
+
+    /* inventory small device style  end */
+    /* quickly restaurent features small device style  start */
+    .restaurent-feature-content a {
+        margin-bottom: 30px;
+    }
+
+    .restaurent-feature {
+        margin: 50px 0 10px;
+    }
+
+    /* quickly restaurent features small device style  end */
+    /* additional features small device style  start */
+    .single-additional-feature {
+        width: 100%;
+        padding: 48px 65px;
+    }
+
+    /* additional features small device style  end */
+    /* try free small device style  start */
+    .pricing-details a {
+        display: inline-block;
+        width: fit-content;
+    }
+
+    .try-free {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .email-add {
+        margin: 25px 0;
+    }
+
+    .single-business-support a:first-of-type h3 {
+        font-size: 1.1rem;
+        font-weight: 300 !important;
+    }
+
+    .business-support {
+        padding-bottom: 60px;
+    }
+
+    .pricing-title p {
+        padding: 2rem 0;
+    }
+
+    /* try free small device style  end */
+
+    /* Restaurent page small device style end */
+    /* Retail page small device style start */
+    /* retail additional feature small device style start */
+    .retail-feature-box {
+        padding: 0 45px;
+    }
+
+    /* retail additional feature small device style end */
+    /*  quickly retail usability feature small device style start */
+    .single-retail-uses {
+        padding: 20px 0;
+    }
+
+    /*  quickly retail usability feature small device style end */
+    /*  help small device style end */
+    .single-help-box {
+        margin: 25px 0;
+    }
+
+    /*  help small device style end */
+    /*  retail pricing small device style start */
+    .pricing-limit-options {
+        gap: 25px;
+        padding: 0 45px;
+    }
+
+    .single-pricing-limit {
+        width: 100%;
+    }
+
+    .additional-feature-title {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /*  retail pricing small device style end */
+    /* Retail page small device style end */
+    .app-journey-conatiner {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1024.98px) {
+
+    /* md and lg device common style start */
+    .d-sm-block {
+        display: block;
+    }
+
+    .d-sm-none {
+        display: none;
+    }
+
+    /* .d-sm-ib {
+        display: inline-block;
+    } */
+
+    .text-sm-center {
+        text-align: center;
+    }
+
+    .px-sm-15 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .mb-sm-10 {
+        margin-bottom: 15px;
+    }
+
+    .w-sm-100 {
+        width: 100%;
+    }
+
+    .w-md-100 {
+        width: 100%;
+    }
+
+    .px-mdlg-15 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* md and lg device common style end */
+
+    /* home page md and lg device style start */
+    /* header md and lg device media style start */
+    .menu-toggler {
+        position: absolute;
+        top: 11px;
+        right: 15px;
+        border: .1px solid #ffffff28;
+        border-radius: 5px;
+        padding: 4px 12px;
+    }
+
+    .menu-toggler a i {
+        font-size: 20px;
+        color: #ffffff80 !important;
+    }
+
+    .header {
+        padding: 1rem 0;
+    }
+
+    .header-container,
+    .header-nav,
+    .header-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-nav {
+        display: none;
+        padding-top: 10px;
+    }
+
+    .logo-container a,
+    .header-nav ul li a {
+        display: inline-block;
+    }
+
+    .logo-container a {
+        padding: 0;
+    }
+
+    .menu-toggler-checkbox:checked~.header-container .header-nav {
+        display: block;
+    }
+
+    .menu-toggler-checkbox {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    .customer-dropdown-ul {
+        align-items: start !important;
+    }
+
+    .customer-menu ul li {
+        padding: 5px 0 5px 5px;
+    }
+
+    .customer-dropdown:focus-within .customer-menu {
+        position: relative !important;
+        display: inline-block !important;
+        width: calc(100% - 1rem - 17px);
+        top: 0;
+    }
+
+    .white-btn {
+        margin-left: 17px;
+    }
+
+    /* header md and lg device media style end */
+    /* banner small device media style start */
+    .banner {
+        margin: 0;
+        padding: 25px 15px;
+    }
+
+    .section-title h1,
+    .feature-title h2,
+    .service-title h2,
+    .application h1,
+    .restaurent-feature-content h2,
+    .additional-feature-title h1,
+    .pricing-details p {
+        font-size: 1.6rem;
+        line-height: 32px;
+    }
+
+    .section-title p {
+        font-size: 1.1rem;
+        padding: 1.5rem 15px;
+        line-height: 25px;
+    }
+
+    .slider {
+        justify-content: space-evenly;
+    }
+
+    .slider img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .business,
+    .hardware,
+    .customer,
+    .support,
+    .footer,
+    .business-automation,
+    .application,
+    .business-support,
+    .try-free,
+    .retail-additional-feature,
+    .retail-uses,
+    .help {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .easy-title p,
+    .easy-container-p,
+    .feature-title-container p,
+    .business-title p,
+    .business-effort-title p,
+    .service-title p,
+    .hardware-title p,
+    .support-title p,
+    .business-automation-title p,
+    .restaurent-feature-content p,
+    .single-additional-feature p,
+    .business-support-title p,
+    .pricing-title p,
+    .try-free-left-container p,
+    .help-title p,
+    .card-details p:first-of-type {
+        font-size: 16px;
+    }
+
+    /* banner small device media style end */
+
+    .service-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        margin-top: 50px;
+    }
+
+    .hardware-container ul {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
+    .hardware-container ul li {
+        width: 40%;
+    }
+
+    .customer-box {
+        justify-content: space-around;
+    }
+
+    .customer-box figure {
+        width: 95px;
+    }
+
+    .support-box {
+        justify-content: space-between;
+    }
+
+    .support-box a {
+        flex: none;
+        width: 48.5%;
+    }
+
+    .footer {
+        padding: 48px;
+    }
+
+    .footer-ul-span {
+        display: flex;
+        flex: 2;
+        flex-wrap: wrap;
+    }
+
+    .footer-ul-span ul {
+        flex: none;
+        width: 50%;
+    }
+
+    .address {
+        flex: 2;
+    }
+
+    /* home page md and lg device style start */
+    .restaurent-banner-inner h2,
+    .retail-banner-inner h2 {
+        font-size: 1.8rem;
+    }
+
+    .restaurent-banner-inner {
+        padding-left: 35px;
+    }
+
+    .single-pricing {
+        flex: none;
+        width: 48%;
+    }
+
+    .pricing-box {
+        gap: 25px;
+    }
+
+    .try-free-right-container form button {
+        margin-top: 10px;
+    }
+
+    .retail-banner-inner {
+        text-align: right;
+    }
+
+    .retail-feature-box {
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .single-retail-feature {
+        flex: none;
+        width: 20%;
+    }
+
+    .e-shop-pricing {
+        width: 100%;
+    }
+
+    .single-pricing-limit {
+        padding: 35px 15px;
+    }
+
+    .single-pricing-limit p {
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+}
+
+/* @media (min-width: 769px) and (max-width: 1024.98px) {} */
+
+@media (min-width: 1025px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}

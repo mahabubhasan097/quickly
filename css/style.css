@@ -1,0 +1,974 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Styling start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(160, 160, 160);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7a8b94;
+    border-radius: 10px;
+}
+
+/* common style start */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 15px;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.color-blue {
+    color: #003a72;
+}
+
+.color-green {
+    color: #30881c;
+}
+
+.color-green-two {
+    color: #00897b;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-green {
+    background-color: #4caf50;
+}
+
+.bg-blue {
+    background-color: #3f51b5;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* common style end */
+
+/* homepage style start */
+/* header style start */
+.header {
+    padding: .5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-container {
+    align-items: center;
+}
+
+.logo-container a {
+    padding-bottom: .5rem;
+    margin-right: 16px;
+}
+
+.logo-container a img {
+    height: auto;
+    width: 128px;
+}
+
+.header-nav {
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul, ul {
+    list-style: none;
+}
+
+.header-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+
+.header-nav ul li a:hover {
+    color: #bfbfbf;
+}
+
+.header-nav ul:last-of-type {
+    align-items: center;
+    position: relative;
+}
+
+.customer-menu {
+    position: absolute;
+    background-color: white;
+    padding: 8px 0;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    top: 38px;
+    left: 17px;
+    display: none;
+    width: 228px;
+}
+
+.customer-menu ul li {
+    padding: 15px 0 15px 5px;
+    border-left: 2px solid transparent;
+}
+
+.customer-menu ul li:hover {
+    background-color: #eafaf9;
+    border-left: 2px solid #a7eae7;
+}
+
+.customer-menu ul li a {
+    color: #000 !important;
+}
+
+.customer-dropdown {
+    cursor: pointer;
+}
+
+.customer-dropdown:focus-within .customer-menu {
+    display: block;
+}
+
+.white-btn {
+    display: block;
+    color: #000 !important;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 115px;
+    margin-left: 10px;
+}
+
+/* header style end */
+
+/* banner style start */
+.banner {
+    margin-top: 55px;
+    padding: 55px 15px;
+}
+
+.section-title h1,
+.feature-title h2,
+.service-title h2,
+.application h1,
+.restaurent-feature-content h2,
+.additional-feature-title h1 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.section-title p {
+    font-size: 1.3rem;
+    padding: 2rem 0;
+    line-height: 30px;
+}
+
+.start-form {
+    padding: 20px 0 55px 0;
+    justify-content: center;
+}
+
+.form-row {
+    align-items: center;
+}
+
+.form-row select {
+    padding: .8rem 1.5rem;
+    border-color: #ececec;
+    color: #6c757d;
+    font-size: 16px;
+}
+
+.form-row select:focus {
+    border-color: #ececec;
+}
+
+.form-row button {
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 8px;
+    background-color: #30881c;
+    padding: .7rem 2.2rem;
+    border-radius: .25rem;
+    line-height: 1.5;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.slider,
+.app-journey-conatiner {
+    justify-content: space-between;
+}
+
+/* bannner style end */
+
+/* easy style start */
+.easy,
+.service,
+.pricing {
+    background-color: #fafbfb;
+    padding: 50px 0;
+}
+
+.easy-title p,
+.easy-container-p,
+.feature-title-container p,
+.business-title p,
+.service-title p,
+.hardware-title p,
+.support-title p,
+.business-automation-title p,
+.restaurent-feature-content p,
+.single-additional-feature p,
+.business-support-title p,
+.pricing-title p,
+.try-free-left-container p,
+.help-title p {
+    font-size: 17px;
+}
+
+.easy-image {
+    justify-content: center;
+}
+
+.easy-container-p {
+    margin-top: 40px;
+    line-height: 30px;
+}
+
+/* easy style end */
+
+/* feature style start */
+.single-feature {
+    margin: 50px 0;
+}
+
+.feature-image-container img {
+    width: 100%;
+}
+
+.feature-image-container,
+.feature-title {
+    justify-content: center;
+    flex: 1;
+}
+
+.feature-title {
+    background-color: #e5f9f8;
+    align-items: center;
+}
+
+.feature-title-container {
+    padding: 0 50px;
+}
+
+.feature-title-container h2,
+.service-title h2 {
+    margin-bottom: 30px;
+}
+
+.feature-title-container p,
+.service-title p,
+.business-support-title p {
+    line-height: 35px;
+}
+
+/* feature style end */
+
+/* business style start */
+.business,
+.hardware,
+.customer,
+.support,
+.footer,
+.business-automation,
+.application,
+.business-support,
+.try-free,
+.retail-additional-feature,
+.retail-uses,
+.help {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.business-image {
+    display: block;
+    margin: 0 auto 50px;
+}
+
+/* business style end */
+
+/* service style start */
+.service-container,.cards{
+    flex-wrap: nowrap;
+}
+.cards {
+    gap: 60px;
+}
+
+.service-card {
+    box-shadow: 0 0 5px #00000024;
+}
+
+.service-title-container {
+    padding-right: 20px;
+}
+
+.service-title {
+    align-items: center;
+}
+
+.card-details h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+.card-details p:first-of-type {
+    font-size: 1.125rem;
+}
+
+.card-details p:last-of-type {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 20px 0 30px;
+}
+
+.card-details button {
+    color: #00897b;
+    background-color: #fff;
+    border: 1px solid #00897b;
+    padding: 0.6rem 2.2rem;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card-details button:hover {
+    background-color: #00897b;
+    color: white;
+}
+
+.rbs-btn {
+    color: #003a72 !important;
+    background-color: #fff;
+    border-color: #003a72 !important;
+}
+
+.rbs-btn:hover {
+    background-color: #003a72 !important;
+    color: white !important;
+}
+
+/* service style end */
+
+/* hardware style start */
+.hardware-container ul {
+    list-style: none;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.hardware-container ul li {
+    box-shadow: 0 0 5px #00000024;
+    padding: 8px;
+    width: 20%;
+}
+
+/* hardware style end */
+
+/* customer style start */
+.customer-box {
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.customer-box figure {
+    background-color: #fafbfb;
+    padding: 8px;
+    width: 160px;
+}
+
+/* customer style end */
+
+/* support style start */
+.support-box {
+    gap: 17px;
+    padding-top: 10px;
+}
+
+.support-box a {
+    text-decoration: none;
+    color: black;
+    padding: 16px;
+    box-shadow: 0 0 5px #00000024;
+    flex: 1;
+    border-radius: 5px;
+}
+
+.support-box a img {
+    width: 60px;
+    height: 60px;
+    margin: 25px 0;
+}
+
+.support-box a h3,
+.single-business-support a:first-of-type h3,
+.single-help-box h3 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.support-box a p {
+    margin: 25px 0 16px;
+    line-height: 25px;
+}
+
+/* support style end */
+
+/* footer style start */
+.footer-ul-span{
+    display: flex;
+    flex: 4;
+}
+.footer-container ul,
+.restaurent-feature-img,
+.restaurent-feature-content,
+.single-business-support {
+    flex: 1;
+    list-style: none;
+}
+
+.footer-container ul li a {
+    text-decoration: none;
+    color: #888;
+    font-size: 13px;
+    display: inline-block;
+    padding-bottom: 8px;
+    transition: .3s;
+}
+
+.footer-container ul li a:hover {
+    color: white;
+}
+
+.address {
+    flex: 3;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.address ul {
+    justify-content: end;
+}
+
+.address ul li {
+    margin-left: 8px;
+}
+
+.address address {
+    color: #4c4c4c;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.address address span {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.copyright p,
+.single-pricing p:first-of-type small {
+    color: #888;
+    font-size: 13px;
+}
+
+/* footer style end */
+/* homepage style end */
+
+/* Restaurent page start */
+/* Restaurent banner style start */
+.restaurent-banner,
+.retail-banner {
+    background-color: #f9f9f9;
+}
+
+.restaurent-banner-inner,
+.retail-banner-inner {
+    background-image: url(../images/banner/rom-landing.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 110px 15px;
+    margin-top: 55px;
+}
+
+.restaurent-banner-inner h2,
+.retail-banner-inner h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.restaurent-banner-inner button,
+.retail-banner-inner button {
+    background-color: #00897b;
+    border: none;
+    padding: .6rem 2.2rem;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+/* restaurent banner style end */
+
+/* business automation style start */
+.automation-feat-title {
+    background-color: #fafbfb;
+}
+
+/* business automation style end */
+
+/* inventory style start */
+.inv-img img {
+    width: 35%;
+}
+
+/* inventory style end */
+
+/* application style start */
+.application {
+    background-color: #f3f3f3;
+}
+
+.app-journey-conatiner {
+    margin-top: 45px;
+    gap: 70px;
+}
+
+.app-journey {
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-journey-large {
+    flex: 2;
+}
+
+.app-journey-large p,
+.app-journey p {
+    margin: 20px 0;
+}
+
+.signup-btn,
+.signin-btn,
+.pricing-details a,
+.try-free-right-container form button {
+    text-decoration: none;
+    padding: .6rem 2rem;
+    background-color: #00897b;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+/* application style end */
+
+/* quickly restaurent feature style start */
+.restaurent-feature {
+    margin: 80px 0;
+}
+
+
+.restaurent-feature-content p {
+    line-height: 25px;
+    margin: 30px 0;
+}
+.restaurent-feature-content a{
+    padding: .7rem 2.2rem;
+    border: 1px solid #00897b;
+    color: #00897b;
+    border-radius: 4px;
+    background-color: white;
+    text-decoration: none;
+}
+.restaurent-feature-content a:hover{
+    background-color: #00897b;
+    color: white;
+}
+.restaurent-feature-img {
+    text-align: end;
+}
+
+.pl-5 {
+    padding-left: 40px;
+}
+
+/* quickly restaurent feature style end */
+
+/* addtional feature style start */
+.additional-feature {
+    background-color: #fafbfb;
+    padding: 60px 0;
+}
+
+.additional-feature-container {
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.single-additional-feature {
+    width: 25%;
+    padding: 48px 55px;
+}
+
+.single-additional-feature img {
+    width: 48px;
+    height: 48px;
+}
+
+.single-additional-feature p {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.business-support-box {
+    gap: 20px;
+}
+
+/* addtional feature style end */
+
+/* business support style start */
+.single-business-support {
+    box-shadow: 0 0 5px #00000024;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.single-business-support a {
+    text-decoration: none;
+}
+
+.single-business-support a:first-of-type i {
+    font-size: 35px;
+    color: #99a3a4;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.single-business-support a:first-of-type p {
+    color: #000;
+    font-size: 17x;
+    line-height: 1.5;
+    margin: 15px 0;
+
+}
+
+.single-business-support a:last-of-type,
+.try-free-left-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* business support style end */
+
+/* pricing style start */
+.pricing-box {
+    gap: 15px;
+}
+
+.single-pricing {
+    flex: 1;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.res-sp-one {
+    border-top: 3px solid #9bbb65;
+}
+
+.res-sp-two {
+    border-top: 3px solid #ffab38;
+}
+
+.res-sp-three {
+    border-top: 3px solid #f5634a;
+}
+
+.res-sp-four {
+    border-top: 3px solid #793392;
+}
+
+.ret-sp-five {
+    border-top: 3px solid #3c5ba6;
+}
+
+.ret-sp-six {
+    border-top: 3px solid #3077bc;
+}
+.single-pricing h3 {
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ececec;
+}
+
+.single-pricing p:first-of-type {
+    color: #444444;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 20px 0 5px;
+}
+
+.single-pricing P:last-of-type {
+    color: #444444;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.pricing-details p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 25px 0;
+}
+
+.pricing-details a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* pricing style end */
+
+/* try free style start */
+.try-free-left-container,
+.try-free-right-container {
+    flex: 1;
+}
+
+.try-free-left-container h2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+.try-free-right-container {
+    justify-content: end;
+    align-items: center;
+}
+
+.try-free-right-container form input[type='email'] {
+    width: 260px;
+    padding: 13px;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+/* try free style end */
+
+/* Restaurent page end */
+
+/* retail page start */
+/* retail banner style start */
+
+.retail-banner-inner {
+    text-align: right;
+    background-image: url(../images/banner/rbs-landing.jpg);
+    background-position: left center;
+}
+.retail-banner-inner button,.retail-pricing-details a{
+    background-color: #003a72;
+}
+/* retail banner style end */
+
+/* retail additional feature style start */
+.retail-feature-box{
+    gap: 25px;
+    margin-top: 30px;
+}
+.single-retail-feature{
+    flex: 1;
+    padding: 8px 16px;
+    box-shadow: 0 0 5px #00000024;
+    border-radius: 4px;
+}
+.single-retail-feature  img,.single-retail-uses img{
+    width: 36px;
+    height: 36px;
+}
+.single-retail-feature p{
+    font-size: 17px;
+    margin: 15px 0;
+    line-height: 25px;
+}
+/* retail additional feature style end */
+
+/*  */
+.e-shop-content{
+    flex-direction: column;
+    justify-content: center;
+}
+.e-shop-content a{
+    display: inline-block;
+    border-color: #003a72;
+    color: #003a72;
+}
+.e-shop-content a:hover{
+    background-color: #003a72;
+}
+
+/* retail application style start */
+.retail-signup-btn,.retail-signin-btn, .retail-email-btn{
+    background-color: #003a72 !important;
+}
+/* retail application style end */
+
+/* quickly retail usability style start */
+.border-bottom{
+    border-bottom: 1px solid #e6e6e6;
+}
+.border-right{
+    border-right: 1px solid #e6e6e6;
+}
+.retail-uses-left,.retail-uses-right{
+    flex: 1;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.retail-uses-left img{
+    display: block;
+    margin: 0 auto;
+}
+.single-retail-uses{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.single-retail-uses p{
+    font-size: 17px;
+    margin-top: 18px;
+}
+/* quickly retail usability style end */
+
+/* help style start */
+.help-box{
+    padding-top: 20px;
+}
+.single-help-box{
+    flex:1;
+    padding: 0 25px;
+}
+.single-help-box p{
+    font-size: 17px;
+    line-height: 25px;
+    margin: 20px 0;
+}
+.single-help-box a{
+    color: #003a72; 
+    padding: .6rem 1rem; 
+    border: 1px solid #003a72;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.single-help-box a:hover{
+    background-color: #003a72;
+    color: white;
+}
+/* help style end */
+
+/* retail pricing style start */
+.pricing-limit h2{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 25px 0;
+}
+.pricing-limit-options{
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.single-pricing-limit{
+    width: 17%;
+    padding: 50px 20px;
+    background-color: #f1f1ff;
+    box-shadow: 0 4px 25px #f1f2f3;
+}
+.single-pricing-limit p{
+    color: #3c3c3c;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+/* retail pricing style end */
+/* retail page end */
+option{
+    width: 100%;
+    word-wrap: break-word;
+    display: inline-block;
+}
